@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="PoultryManager.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="23"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="33"/>
+        <CursorPos X="26" Y="59"/>
+        <ComponentState Value="2"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udatamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmData"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="3" Y="43"/>
+        <ComponentState Value="2"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uclasses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/zeosdbo/src/component/ZStoredProcedure.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="155" Column="3" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="61" Column="27" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="156" Column="23" TopLine="134"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="20" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="udatamodule.pas"/>
+        <Caret Line="48" Column="3" TopLine="10"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

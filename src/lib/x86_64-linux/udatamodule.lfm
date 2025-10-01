@@ -1,0 +1,109 @@
+object dmData: TdmData
+  OldCreateOrder = False
+  Height = 1378
+  HorizontalOffset = 0
+  VerticalOffset = 0
+  Width = 1085
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    Catalog = 'GESTAO_AVICOLA'
+    Properties.Strings = (
+      'AutoCommit=False'
+      'RawStringEncoding=DB_CP'
+    )
+    AfterConnect = ZConnection1AfterConnect
+    DisableSavepoints = False
+    HostName = 'localhost'
+    Port = 1521
+    Database = 'localhost:1521/FREEPDB1'#10
+    User = 'GESTAO_AVICOLA'
+    Password = 'gestaoavicola'
+    Protocol = 'oracle'
+    Left = 48
+    Top = 32
+  end
+  object qryLotes: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'SELECT * FROM TAB_LOTE_AVES ORDER BY ID_LOTE'
+    )
+    Params = <>
+    Left = 168
+    Top = 32
+  end
+  object dsLotes: TDataSource
+    DataSet = qryLotes
+    Left = 248
+    Top = 32
+  end
+  object qryPesagens: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'SELECT * FROM TAB_PESAGEM WHERE ID_LOTE_FK = :ID_LOTE'
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'ID_LOTE'
+        ParamType = ptInput
+        SQLType = stInteger
+      end>
+    Left = 168
+    Top = 88
+    ParamData = <    
+      item
+        DataType = ftInteger
+        Name = 'ID_LOTE'
+        ParamType = ptInput
+        SQLType = stInteger
+      end>
+  end
+  object dsPesagens: TDataSource
+    DataSet = qryPesagens
+    Left = 248
+    Top = 88
+  end
+  object qryMortalidade: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'SELECT * FROM TAB_MORTALIDADE WHERE ID_LOTE_FK = :ID_LOTE'
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'ID_LOTE'
+        ParamType = ptInput
+        SQLType = stInteger
+      end>
+    Left = 168
+    Top = 144
+    ParamData = <    
+      item
+        DataType = ftInteger
+        Name = 'ID_LOTE'
+        ParamType = ptInput
+        SQLType = stInteger
+      end>
+  end
+  object dsMortalidade: TDataSource
+    DataSet = qryMortalidade
+    Left = 248
+    Top = 144
+  end
+  object spInserirPesagem: TZStoredProc
+    Connection = ZConnection1
+    Params = <>
+    Options = [doPreferPrepared]
+    StoredProcName = 'SP_INSERIR_PESAGEM'
+    Left = 48
+    Top = 88
+  end
+  object spInserirMortalidade: TZStoredProc
+    Connection = ZConnection1
+    Params = <>
+    Options = [doPreferPrepared]
+    StoredProcName = 'SP_INSERIR_MORTALIDADE'
+    Left = 48
+    Top = 144
+  end
+end
